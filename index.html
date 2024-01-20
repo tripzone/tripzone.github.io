@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
+    <title>Tripzone</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="sidebar-mini sidebar-collapse theme-dark  sidebar-expanded-on-hover has-preloader" style="display: none;">
+<!-- Pre loader
+  To disable preloader remove 'has-preloader' from body
+ -->
+
+<div id="loader" class="loader">
+    <div class="loader-container">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- @Pre loader-->
+<div id="rekord-app">
+
+
+<aside class="main-sidebar fixed offcanvas shadow" data-toggle='offcanvas'>
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a class="ajaxifyPage active" href="index.html">
+                <i class="icon icon-home-1 s-24"></i> <span>Home</span>
+            </a>
+            </li>
+            <li><a class="ajaxifyPage" href="albums.html">
+                <i class="icon icon-music-player-1 s-24"></i> <span>Music</span>
+            </a>
+            <li>
+            <li><a class="ajaxifyPage" href="videos.html">
+                <i class="icon icon-video-player-2 s-24"></i> <span>Videos</span>
+            </a>
+            </li>
+            <li><a class="ajaxifyPage" href="gallery.html">
+                <i class="icon icon-photo-camera-1 s-24"></i> <span>Gallery</span>
+            </a>
+            </li>
+        </ul>
+
+    </div>
+</aside>
+<!--Sidebar End-->
+
+<!-- Right Sidebar -->
+<aside class="control-sidebar fixed ">
+    <div class="slimScroll">
+        <div class="sidebar-header">
+            <h4>PlayList</h4>
+            <a href="#" data-toggle="control-sidebar" class="paper-nav-toggle  active"><i></i></a>
+        </div>
+        <div class="p-3">
+            <ul id="playlist" class="playlist list-group">
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/reddub_phobia_tripzone_remix.mp3" data-wave="assets/media/track3.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/phobia.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Phobia - RedDub</h6>Tripzone Remix
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/tripzone_ceeceecox_hold_on_me.mp3" data-wave="assets/media/track2.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/hold_on_me.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Hold on me</h6>Tripzone & Cee cee
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/tripzone_koen_renaissance.mp3" data-wave="assets/media/track1.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/renaissance.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Renaissance</h6>Tripzone & Koen
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/gera_erevan_tripzone_remix.mp3"  data-wave="assets/media/track1.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/erevan.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Erevan - Gera</h6>Tripzone Remix
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/ramtink_moryyacel_the_every_game_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/the_every_game.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>The Every Game</h6>Tripzone Remix
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/takin_sands_of_time_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/sands_of_time.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Sands of Time</h6>Tripzone Remix
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item my-1">
+                    <a class="no-ajaxy media-url" href="assets/media/tripzone_moryyacel_mantra.mp3" data-wave="assets/media/track2.json">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="icon-play s-28"></i>
+                            <figure class="avatar-md float-left mr-3 mt-1">
+                                <img class="r-5" src="assets/img/music/mantra.jpg" alt="">
+                            </figure>
+                            <div>
+                                <h6>Mantra</h6>Tripzone, Mory
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</aside>
+<!-- /.right-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+<div class="control-sidebar-bg shadow  fixed"></div>
+
+<svg class="d-none">
+    <defs>
+        <symbol id="icon-cross" viewBox="0 0 24 24">
+            <title>cross</title>
+            <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+        </symbol>
+    </defs>
+</svg>
+<div class="searchOverlay page">
+    <button
+            id="btn-searchOverlay-close"
+            class="btn btn--searchOverlay-close"
+            aria-label="Close searchOverlay form"
+    >
+        <svg class="icon icon--cross">
+            <use xlink:href="#icon-cross"></use>
+        </svg>
+    </button>
+    <div class="searchOverlay__inner  searchOverlay__inner--up">
+        <form class="searchOverlay__form" action="index.html">
+            <input
+                    class="searchOverlay__input"
+                    name="searchOverlay"
+                    type="text"
+                    placeholder="Search"
+                    autocomplete="off"
+                    spellcheck="false"
+            />
+            <span class="searchOverlay__info">Hit enter to searchOverlay or ESC to close</span>
+        </form>
+    </div>
+    <div class="searchOverlay__inner searchOverlay__inner--down">
+        <div class="searchOverlay__related">
+            <div class="searchOverlay__suggestion">
+                <div class="card mb-3">
+                    <div class="card-header transparent b-b">
+                        <strong>New Artists</strong>
+                    </div>
+                    <ul class="playlist list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <div class="col-10">
+                                    <figure class="avatar avatar-md float-left  mr-3 mt-1">
+                                        <img src="assets/img/demo/u1.jpg" alt="">
+                                    </figure>
+                                    <h6>Zoe Foe</h6>
+                                    <small>5 Albums - 50 Songs</small>
+                                </div>
+                                <a href="#" class="ml-auto"><i class="icon-more"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <div class="col-10">
+                                    <figure class="avatar avatar-md float-left  mr-3 mt-1">
+                                        <img src="assets/img/demo/u2.jpg" alt="">
+                                    </figure>
+                                    <h6>Zoe Foe</h6>
+                                    <small>5 Albums - 50 Songs</small>
+                                </div>
+                                <a href="#" class="ml-auto"><i class="icon-more"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <div class="col-10">
+                                    <figure class="avatar avatar-md float-left  mr-3 mt-1">
+                                        <img src="assets/img/demo/u3.jpg" alt="">
+                                    </figure>
+                                    <h6>Zoe Foe</h6>
+                                    <small>5 Albums - 50 Songs</small>
+                                </div>
+                                <a href="#" class="ml-auto"><i class="icon-more"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <div class="col-10">
+                                    <figure class="avatar avatar-md float-left  mr-3 mt-1">
+                                        <img src="assets/img/demo/u6.jpg" alt="">
+                                    </figure>
+                                    <h6>Zoe Foe</h6>
+                                    <small>5 Albums - 50 Songs</small>
+                                </div>
+                                <a href="#" class="ml-auto"><i class="icon-more"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="searchOverlay__suggestion">
+                <div class="card mb-3">
+                    <div class="card-header transparent b-b">
+                        <strong>Events</strong>
+                    </div>
+                    <ul class="playlist list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center ">
+                                <div class="col-8 ">
+                                    <a href="video-single.html">
+                                        <h6>Battal of Bands</h6>
+                                    </a>
+                                    <small class="mt-1"><i class="icon-placeholder-3 mr-1 "></i> London Music Hall
+                                    </small>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="text-lg-center  bg-primary r-10 p-2 text-white primary-bg">
+                                        <div class="s-18">24</div>
+                                        <small>July, 2019</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center ">
+                                <div class="col-8 ">
+                                    <a href="video-single.html">
+                                        <h6>Battal of Bands</h6>
+                                    </a>
+                                    <small class="mt-1"><i class="icon-placeholder-3 mr-1 "></i> London Music Hall
+                                    </small>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="text-lg-center  bg-primary r-10 p-2 text-white primary-bg">
+                                        <div class="s-18">08</div>
+                                        <small>July, 2019</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center ">
+                                <div class="col-8 ">
+                                    <a href="video-single.html">
+                                        <h6>Battal of Bands</h6>
+                                    </a>
+                                    <small class="mt-1"><i class="icon-placeholder-3 mr-1 "></i> London Music Hall
+                                    </small>
+                                </div>
+                                <div class="ml-auto">
+                                    <div class="text-lg-center  bg-primary r-10 p-2 text-white primary-bg">
+                                        <div class="s-18">12</div>
+                                        <small>July, 2019</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--navbar-->
+<nav class="navbar-wrapper navbar-bottom-fixed shadow">
+    <div class="navbar navbar-expand player-header justify-content-between  bd-navbar">
+        <div class="d-flex align-items-center">
+            <a href="#" data-toggle="push-menu" class="paper-nav-toggle pp-nav-toggle  paper-nav-toggle-sidenav ml-2 mr-2">
+                <i></i>
+            </a>
+            <a class="navbar-brand" data-toggle="push-menu">
+                <div class="d-flex align-items-center s-14 l-s-2">
+                    <span>menu</span>
+                </div>
+            </a>
+        </div>
+        <!--Player-->
+        <div id="mediaPlayer" class="player-bar col-lg-8 col-md-5" data-auto="true">
+            <div class="row align-items-center grid">
+                <div class="col">
+                    <div class="d-flex align-items-center">
+                        <button id="previousTrack" class="btn btn-link d-sm-block">
+                            <i class="icon-back s-18"></i>
+                        </button>
+                        <button class=" btn btn-link" id="playPause">
+                            <span id="play"><i class="icon-play s-36"></i></span>
+                            <span id="pause" style="display: none"><i class="icon-pause s-36 text-primary"></i></span>
+                        </button>
+                        <button id="nextTrack" class="btn btn-link d-sm-block">
+                            <i class="icon-next s-18"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-8 d-none d-lg-block">
+                    <div id="waveform"></div>
+                </div>
+                <div class="col d-none d-md-block">
+                    <small class="track-time mr-2 text-primary align-middle"></small>
+                    <a data-toggle="control-sidebar">
+                        <i class="icon icon-menu-3 s-24 align-middle"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!--@Player-->
+        <!--Top Menu Start -->
+<div class="navbar-custom-menu">
+    <ul class="nav navbar-nav">
+    </ul>
+</div>
+    </div>
+
+</nav>
+<!--Page Content-->
+<main id="pageContent" class="page has-sidebar">
+<div class="container-fluid relative animatedParent animateOnce no-p">
+    <div class="animated fadeInUpShort">
+        <!--Banner Slider-->
+        <section>
+            <div class="text-white">
+                <div class="lightSlider"
+                     data-item="1"
+                     data-controls="true"
+                     data-slide-margin="0"
+                     data-gallery="false"
+                     data-pause="8000"
+                     data-pauseonhover="true"
+                     data-auto="false"
+                     data-pager="false"
+                     data-loop="true">
+                    <div class="xv-slide" data-bg-possition="top"
+                         style="background-image:url('assets/img/demo/moments.jpg');">
+                        <div class="wrapper has-bottom-gradient">
+                            <div class="p-md-5 p-3">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 fadeInRight animated">
+                                        <div class="xv-slider-content clearfix color-white">
+                                            <h1 class="s-64 mt-5 font-weight-lighter">Tripzone</h1>
+                                            
+                                            <p class="s-24 font-weight-lighter ">
+                                                <a href="https://soundcloud.com/tripzone"><i class="icon-soundcloud ml-3"></i></a>
+                                                <a href="https://www.instagram.com/djtripzone/"><i class="icon-instagram ml-3"></i></a>
+
+                                                <a href="https://open.spotify.com/artist/1kU0YgcemSYYdynp6Z9oBu"><i class="icon-spotify ml-3"></i></a>
+
+                                            </p>
+                                            <!-- <div class="pt-3">
+                                                <a href="https://www.beatport.com/release/moments/1219467" target="_blank" class="btn btn-primary btn-lg">Buy Now on Beatport</a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-gradient"></div>
+                    </div>
+                </div>
+            </div>
+            <!--slider Wrap-->
+        </section>
+        <!--@Banner Slider-->
+        <div class="wrapper p-md-5 p-3  ">
+            <!--New Releases-->
+            <section class="section">
+                <div class="d-flex relative align-items-center justify-content-between">
+                    <div class="mb-4">
+                        <h4>Music</h4>
+                        <p>Checkout the music page for more</p>
+                    </div>
+                    <a href="albums.html">View Music<i class="icon-angle-right ml-3"></i></a>
+                </div>
+                <div class="lightSlider has-items-overlay playlist"
+                     data-item="6"
+                     data-item-lg="3"
+                     data-item-md="3"
+                     data-item-sm="2"
+                     data-auto="false"
+                     data-pager="false"
+                     data-controls="true"
+                     data-loop="false">
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/phobia.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/reddub_phobia_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Phobia</h5>
+                                            <span>RedDub - Tripzone remix</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Phobia</h5>
+                                    <span>RedDub - Tripzone remix</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/hold_on_me.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/tripzone_ceeceecox_hold_on_me.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Hold on me</h5>
+                                            <span>Tripzone & Cee cee cox</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Hold on me</h5>
+                                    <span>Tripzone & Cee cee cox</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/renaissance.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/tripzone_koen_renaissance.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Renaissance</h5>
+                                            <span>Tripzone & Koen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Renaissance</h5>
+                                    <span>Tripzone & Koen</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/erevan.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/gera_erevan_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Erevan</h5>
+                                            <span>Gera - Tripzone Remix</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Erevan</h5>
+                                    <span>Gera - Tripzone Remix</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/the_every_game.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/ramtink_moryyacel_the_every_game_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>The Every Game</h5>
+                                            <span>Tripzone remix</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>The Every Game</h5>
+                                    <span>Tripzone remix</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/sands_of_time.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/takin_sands_of_time_tripzone_remix.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="index.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Sands of Time</h5>
+                                            <span>Takin - Tripzone remix</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Sands of Time</h5>
+                                    <span>Takin - Tripzone remix</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div class="img-wrapper">
+                                <img src="assets/img/music/mantra.jpg" alt="/">
+                                <div class="img-overlay text-white">
+                                    <div class="figcaption">
+                                        <ul class="list-inline d-flex align-items-center justify-content-between">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="snackbar" data-text="Added to favourites"
+                                                   data-pos="top-right"
+                                                   data-showAction="true"
+                                                   data-actionText="ok"
+                                                   data-actionTextColor="#fff"
+                                                   data-backgroundColor="#0c101b">
+                                                    <i class="icon-heart-o s-18"></i>
+                                                </a></li>
+                                            <li class="list-inline-item ">
+                                                <a class="no-ajaxy media-url" href="assets/media/tripzone_moryyacel_mantra.mp3" data-wave="assets/media/track2.json">
+                                                    <i class="icon-play s-48"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="album-boundless.html"><i
+                                                        class="icon-more s-18 pt-3"></i></a></li>
+                                        </ul>
+                                        <div class="text-center mt-5">
+                                            <h5>Mantra</h5>
+                                            <span>Tripzone, Mory Yacel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5>Mantra</h5>
+                                    <span>Tripzone, Mory Yacel</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+            <!--@New Releases-->
+
+            <!--Latest Posts-->
+            <section class="section">
+                <div class="d-flex relative  align-items-center justify-content-between">
+                    <div class="mb-4">
+                        <h4>Videos</h4>
+                        <p>Checkout the videos page for more</p>
+                    </div>
+                    <a href="videos.html">View Videos<i class="icon-angle-right ml-3"></i></a>
+                </div>
+                <div class="lightSlider has-items-overlay"
+                     data-item="3"
+                     data-item-lg="2"
+                     data-item-md="1"
+                     data-item-sm="1"
+                     data-auto="false"
+                     data-pager="false"
+                     data-controls="true"
+                     data-loop="false">
+                    <div class="card">
+                        <figure class="card-img figure">
+                            <div class="img-wrapper">
+                                <img src="assets/img/videos/flypelicanfly.jpg" alt="Card image">
+                            </div>
+                            <div class="img-overlay"></div>
+                            <div class="has-bottom-gradient">
+                                <div class="d-flex">
+                                    <div class="card-img-overlay">
+                                        <div class="pt-3 pb-3">
+                                            <a href="https://www.youtube.com/watch?v=3l8t1IMWC_E">
+                                                <figure class="float-left mr-3 mt-1">
+                                                    <i class="icon-play s-36"></i>
+                                                </figure>
+                                                <div>
+                                                    <h5>Tripzone</h5>
+                                                    <small>Fly Pelican Fly</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="bottom-gradient bottom-gradient-thumbnail"></div>
+                    </div>
+                    <div class="card">
+                        <figure class="card-img figure">
+                            <div class="img-wrapper">
+                                <img src="assets/img/videos/sandsoftime.jpg" alt="Card image">
+                            </div>
+                            <div class="img-overlay text-white">
+                                <div class="figcaption">
+
+                                </div>
+                            </div>
+                            <div class="has-bottom-gradient">
+                                <div class="d-flex">
+                                    <div class="card-img-overlay">
+                                        <div class="pt-3 pb-3">
+                                            <a href="https://www.youtube.com/watch?v=w1pydU0ob3U">
+                                                <figure class="float-left mr-3 mt-1">
+                                                    <i class="icon-play s-36"></i>
+                                                </figure>
+                                                <div>
+                                                    <h5>Takin</h5>
+                                                    <small>Sands of time (Tripzone Remix)</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="bottom-gradient bottom-gradient-thumbnail"></div>
+                    </div>
+                    <div class="card">
+                        <figure class="card-img figure">
+                            <div class="img-wrapper">
+                                <img src="assets/img/videos/mantra.jpg" alt="Card image">
+                            </div>
+                            <div class="img-overlay text-white">
+                                <div class="figcaption">
+
+                                </div>
+                            </div>
+                            <div class="has-bottom-gradient">
+                                <div class="d-flex">
+                                    <div class="card-img-overlay">
+                                        <div class="pt-3 pb-3">
+                                            <a href="https://www.youtube.com/watch?v=eJDjq7goYuU">
+                                                <figure class="float-left mr-3 mt-1">
+                                                    <i class="icon-play s-36"></i>
+                                                </figure>
+                                                <div>
+                                                    <h5>Tripzone, Mory Yacel</h5>
+                                                    <small> Mantra</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="bottom-gradient bottom-gradient-thumbnail"></div>
+                    </div>
+                    <div class="card">
+                        <figure class="card-img figure">
+                            <div class="img-wrapper">
+                                <img src="assets/img/videos/lucid.jpg" alt="Card image">
+                            </div>
+                            <div class="img-overlay text-white">
+                                <div class="figcaption">
+
+                                </div>
+                            </div>
+                            <div class="has-bottom-gradient">
+                                <div class="d-flex">
+                                    <div class="card-img-overlay">
+                                        <div class="pt-3 pb-3">
+                                            <a href="https://www.youtube.com/watch?v=z9tMyzHYRhU">
+                                                <figure class="float-left mr-3 mt-1">
+                                                    <i class="icon-play s-36"></i>
+                                                </figure>
+                                                <div>
+                                                    <h5>Tripzone</h5>
+                                                    <small> Latest Video Released</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="bottom-gradient bottom-gradient-thumbnail"></div>
+                    </div>
+                    <div class="card">
+                        <figure class="card-img figure">
+                            <div class="img-wrapper">
+                                <img src="assets/img/videos/silkroad.jpg" alt="Card image">
+                            </div>
+                            <div class="img-overlay text-white">
+                                <div class="figcaption">
+
+                                </div>
+                            </div>
+                            <div class="has-bottom-gradient">
+                                <div class="d-flex">
+                                    <div class="card-img-overlay">
+                                        <div class="pt-3 pb-3">
+                                            <a href="https://www.youtube.com/watch?v=p0GBccKJ2xA">
+                                                <figure class="float-left mr-3 mt-1">
+                                                    <i class="icon-play s-36"></i>
+                                                </figure>
+                                                <div>
+                                                    <h5>Rishi K</h5>
+                                                    <small>Silk Road (Tripzone Remix)</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="bottom-gradient bottom-gradient-thumbnail"></div>
+                    </div>
+
+                </div>
+            </section>
+            <!--@New Releases-->
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8EE9ZKTZH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K8EE9ZKTZH',{
+  'page_title' : 'index'
+  });
+</script>
+
+</main><!--@Page Content-->
+</div><!--@#rekord-app-->
+<!--/#rekord-app -->
+<script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyC3YkZNNySdyR87o83QEHWglHfHD_PZqiw&libraries=places"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
